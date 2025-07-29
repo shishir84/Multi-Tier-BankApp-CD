@@ -1,0 +1,56 @@
+  1  apt update -y
+    2  aws
+    3  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    4  unzip awscliv2.zip
+    5  sudo ./aws/install
+    6  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    7  ls
+    8  unzip awscliv2.zip
+    9  apt install unzip
+   10  unzip awscliv2.zip
+   11  sudo ./aws/install
+   12  aws --v
+   13  aws --v --short
+   14  aws configure
+   15  aws s3 ls
+   16  git
+   17  git clone https://github.com/jaiswaladi246/EKS-Terraform.git
+   18  ls
+   19  cd EKS-Terraform/
+   20  ls
+   21  terraform
+   22  snap install terraform --classic
+   23  terraform
+   24  terraform --v
+   25  terraform -v
+   26  ls
+   27  vi variables.tf
+   28  ls
+   29  vi main.tf
+   30  terraform init
+   31  terraform plan
+   32  terraform apply --auto-approve
+   33  kubectl
+   34  snap install kubectl --classic
+   35  kubectl
+   36  snap install kubectl --classic
+   37  kubectl --version
+   38  kubectl -v
+   39  kubectl
+   40  kubectl version
+   41  aws eks --region ap-south-1 update-kubeconfig --name devopsshack-cluster
+   42  kubectl get no
+   43  kubectl create ns argocd
+   44  kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml -n argocd
+   45  kubectl get all -n argocd
+   46  kubectl get po -n argocd
+   47  kubectl get svc -n argocd
+   48  kubectl edit svc -n argocd argocd-server
+   49  kubectl get svc -n argocd
+   50  kubectl get secret -n argocd
+   51  kubectl get secret -n argocd argocd-initial-admin-secret -oyaml
+   52  base64  Q1IxelZ0UVdzRGtybE1YQg== -d
+   53  Q1IxelZ0UVdzRGtybE1YQg== base64 -d
+   54  kubectl get secret -n argocd argocd-initial-admin-secret -ojsonpath = "{.data.password}"
+   55  kubectl get secret -n argocd argocd-initial-admin-secret -ojsonpath="{.data.password}"
+   56  kubectl get secret -n argocd argocd-initial-admin-secret -ojsonpath="{.data.password}" | base64 -d
